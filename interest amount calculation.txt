@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+float a,b,c,d;
+printf ("principal amount in Rs is: ");
+scanf ("%f",&a);
+printf ("rate of interest is: ");
+scanf ("%f",&b);
+printf ("total years is: ");
+scanf ("%f",&c);
+d = a*b*c/100.0;
+printf ("interest amount is %f ",d);}
