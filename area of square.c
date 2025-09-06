@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+float a,b;
+printf ("length of square side in meter is: ");
+scanf ("%f",&a);
+b = a*a;
+printf ("area of square is %f ",b);}
