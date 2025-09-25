@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+   int a[5],b[5];
+   for(int i=0;i<5;i++)
+   scanf("%d\n",&a[i]);
+   int j=0;
+for(int i=4;i>=0;i--){
+    b[j]=a[i];
+    j=j+1;
+}
+   printf("the new arrayis:\n");
+   for(int i=0;i<5;i++){
+       printf("%d\n",b[i]);
+   }
+}
