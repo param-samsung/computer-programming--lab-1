@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main() {
+    int a[10], b[10], c;
+    char n;
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &a[i]);
+    }
+
+   
+    printf("Enter direction to shift (L/R): ");
+    scanf(" %c", &n);   
+    printf("Enter number of positions to shift: ");
+    scanf("%d", &c);
+    if (n == 'L') {   
+        for (int i = 0; i < 10; i++) {
+            if (i + c < 10)
+                b[i] = a[i + c];
+            else
+                b[i] = 0;
+        }
+    }
+    else if (n == 'R') {   
+        for (int i = 0; i < 10; i++) {
+            if (i - c >= 0)
+                b[i] = a[i - c];
+            else
+                b[i] = 0;
+        }
+    }
+    printf("Shifted array: ");
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", b[i]);
+    }
+}
