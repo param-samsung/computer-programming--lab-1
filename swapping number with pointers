@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int a=20,b=30,*xptr,*yptr;
+    xptr=&a;
+    yptr=&b;
+    printf("%d %d\n",*xptr,*yptr);
+    *xptr=*xptr+*yptr;
+     *yptr=*xptr-*yptr;
+      *xptr=*xptr-*yptr;
+      printf("after swapping:\n");
+      printf("%d %d\n",*xptr,*yptr);
+    
+}
