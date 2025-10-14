@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int a=50;
+    int *xptr=&a;
+    int **yptr=&xptr;
+    printf("%d",**yptr);
+    
+    
+}
