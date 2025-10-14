@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int a,b;
+    printf("enter 1st the value");
+    scanf("%d",&a);
+    printf("enter 2nd the value");
+    scanf("%d",&b);
+    int *xptr=&a;
+    int *yptr=&b;
+    if(*xptr==*yptr)
+        printf("value is same");
+    else
+    printf("value is not same");
+    
+    
+}
