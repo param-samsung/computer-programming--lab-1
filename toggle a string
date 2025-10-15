@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    char a[100];
+    
+    printf("Enter a string: ");
+    fgets(a, sizeof(a), stdin); 
+
+    for(int i = 0; a[i] != '\0'; i++) {
+        if(isupper(a[i]))
+            a[i] = tolower(a[i]);
+        else if(islower(a[i]))
+            a[i] = toupper(a[i]);
+        
+    }
+
+    printf("Toggled string: %s", a);
+    return 0;
+}
