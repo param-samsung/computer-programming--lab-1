@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+   int a[5]={10,20,30,40,50};
+   int *i=a;
+   int **j=&i;
+   
+   i=a+3;
+       printf("value at a[3]=%d\n",**j);
+       
+   
+   
+}
