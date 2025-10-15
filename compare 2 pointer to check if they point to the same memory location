@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+   int a=50,*i,*j;
+   i=&a;
+   j=&a;
+   if(i==j)
+   printf("position are same");
+   else
+   printf("position are not same");
+}
