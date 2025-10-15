@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+   int a[5]={10,20,30,40,50},b[5];
+   int *i=a;
+   int *j=b;
+   for(int k=0;k<5;k++){
+       *(j+k)=*(i+k);
+   }
+   printf("copy of array\n");
+   for(int k=0;k<5;k++){
+       printf("%d\n",b[k]);
+   }
+   
+}
