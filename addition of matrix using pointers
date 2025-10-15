@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main(){
+int a[3][3],b[3][3],c[3][3];
+int *x = &a[0][0], *y = &b[0][0], *z = &c[0][0];
+
+printf("1st matrix:\n");
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        scanf("%d",x + i*3 + j);
+    }}
+printf("\n");
+printf("2nd matrix:\n");
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        scanf("%d",y + i*3 + j);
+    }}
+for(int i=0;i<3;i++){
+    for(int j=0;j<3;j++){
+        *(z + i*3 + j) = *(x + i*3 + j) + *(y+ i*3 + j);
+}}
+printf("\nResult of matrix addition:\n");
+    for(int i=0; i<3; i++) {
+        printf("| ");
+        for(int j=0; j<3; j++)
+            printf("%d ", *(x + i*3 + j));
+        printf("| + | ");
+        for(int j=0; j<3; j++)
+            printf("%d ", *(y + i*3 + j));
+        printf("| = | ");
+        for(int j=0; j<3; j++)
+            printf("%d ", *(z + i*3 + j));
+        printf("|\n");
+    }
+
+    return 0;
+}
