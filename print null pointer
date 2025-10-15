@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int *xptr=NULL;
+    if(xptr==NULL)
+    printf("pointer value is null");
+    else
+    printf("pointer value is not null");
+    
+}
