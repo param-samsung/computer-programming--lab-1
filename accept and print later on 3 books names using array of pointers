@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char *books[3];       
+    static char names[3][50];
+    printf("Enter names of 3 books:\n");
+    for (int i = 0; i < 3; i++) {
+        printf("Book %d: ", i + 1);
+        scanf(" %[^\n]", names[i]);  
+        books[i] = names[i]; }       
+
+    printf("\nBook names are:\n");
+    for (int i = 0; i < 3; i++) {
+        printf("%s\n", books[i]);
+    }
+}
