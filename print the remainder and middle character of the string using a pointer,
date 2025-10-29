@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[] = "PARAM";
+    int len = strlen(str);
+    char *mid = &str[len / 2];
+    char *ptr = mid;
+    printf("Middle character: %c\n", *mid);
+    printf("Remainder of string: %s\n", ptr);
+}
