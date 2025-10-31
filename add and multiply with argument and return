@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main() {
+    int x,y;
+    printf("enter 2 values\n");
+    scanf("%d %d",&x,&y);
+    int add(int,int);
+    int multiply(int,int);
+   printf("addition is %d\n",add(x,y));
+    printf("multilication is %d\n",multiply(x,y));
+}
+int add(int a,int b){
+   
+    return (a+b);
+}
+    int multiply(int a,int b){
+    return (a*b);}
+    
