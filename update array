@@ -1,0 +1,30 @@
+#include <stdio.h>
+void findmaxmin(int arr[], int n, int *max, int *min, int *maxindex, int *minindex){
+    *min = arr[0];
+    *max= arr[0];
+    *minindex=0;
+    *maxindex=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]>*max){
+        *max=arr[i];
+        *maxindex=i;}
+     if(arr[i]<*min){
+        *min=arr[i];
+        *minindex=i;
+    }}}
+    void updatearr(int arr[], int maxindex, int minindex, int max, int min){
+        printf("Enter new value for max (%d): ", max);
+    scanf("%d", &arr[maxindex]);
+    printf("Enter new value for min (%d): ", min);
+    scanf("%d", &arr[minindex]);
+    }
+void printarr(int arr[], int n){
+for(int i=0;i<n;i++){
+    printf("%d",arr[i]);
+}
+}
+ int main() {
+     int n;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+    int arr[n];
