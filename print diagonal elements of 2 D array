@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+   int a[2][2];
+   printf("enter matix \n");
+   for(int i=0;i<2;i++){
+       for(int j=0;j<2;j++)
+       scanf("%d",&a[i][j]);
+   }
+   
+   int *x =&a[0][0];
+   for(int i=0;i<2;i++){
+       for(int j=0;j<2;j++){
+           if(i==j){
+           
+           printf("diagonal elements of matrix is %d ",*(x+ i*2 + j));
+       }
+          
+       }}
+       return 0;
+   
+}
