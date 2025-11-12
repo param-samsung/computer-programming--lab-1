@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+   int sum1,sum2,arr[7]={1,2,3,4,5,6,7};
+   int *x,*y;
+   x=&arr[0];
+   y=&arr[6];
+   sum1=0;
+   sum2=0;
+   for(int i=0;i<7;i++){
+       sum1+=*x;
+       sum2+=*y;
+       x++;
+       y--;
+       
+       
+   }printf("sum by traverse forward is %d %d",sum1,sum2);
+       
+    
+}
