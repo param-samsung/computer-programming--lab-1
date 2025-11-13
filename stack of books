@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+struct book
+{
+    char title[20];
+    char author[15];
+    int edition;
+    char isbn[20];
+    char publisher[20];
+    float price;
+};
+void printbook(struct book b);
+int main() {
+    struct book b2;
+    struct book b3;
+    struct book b[100];
+    struct book b1 = {"Let Us See", "Habnasm", 6, "jfj5642", "Navneet", 1400.0};
+
+    printf("Book 1 details:\n");
+    printbook(b1);
+    
+ b2 = b1;
+
+    printf("\nBook 2 details (copied from Book 1):\n");
+    printbook(b2);
+    printf("the title: \n");
+    fgets(b1.title,20,stdin);
+    printf("the author: \n");
+    fgets(b1.author,15,stdin);
+    printf("the edition: \n");
+   scanf("%d",&b1.edition);
+   printf("publisher: \n");
+    fgets(b1.publisher,20,stdin);
+    printf("price: \n");
+   scanf("%d",&b1.price);
+   printbook(b1);
+    
+}
+void printbook(struct book b) {
+    printf("Title: %s\n", b.title);
+    printf("Author: %s\n", b.author);
+    printf("Edition: %d\n", b.edition);
+    printf("ISBN: %s\n", b.isbn);
+    printf("Publisher: %s\n", b.publisher);
+    printf("Price: %.2f\n", b.price);
+}
