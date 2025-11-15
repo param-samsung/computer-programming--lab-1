@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+ struct book
+{
+    char title[20];
+    char author[15];
+    int edition;
+    char isbn[20];
+    char publisher[20];
+    float price;
+} ;
+void printbook(struct book b);
+int main() {
+   
+   struct book b2;
+   struct book b0;
+   
+    struct book b3;
+
+
+    struct book b[100];
+    struct book b1 = {"Let Us See", "Habnasm", 6, "jfj5642", "Navneet", 1400.0};
+
+    printf("Book 1 details:\n");
+    printbook(b1);
+   int i=0;
+
+for (;i<=2;i++)
+
+{
+printf("Enter information for b[%d] object.\n",i);
+
+printf("Enter a Book Name : \n");
+
+fgets(b[i].title,20,stdin);
+
+printf("Enter Author Name : \n");
+ fgets(b[i].author,15,stdin);
+printf("Enter Edition No. : \n");
+
+scanf("%d",&b[i].edition);
+
+printf("Enter ISBN : \n");
+fgets(b[i].isbn,20,stdin);
+printf("Enter Name of Publisher: \n");
+fgets(b[i].publisher,20,stdin);
+printf("enter the price: \n");
+scanf("%f",&b[i].price);
+printbook(b0);
+printbook(b1);
+printbook(b2);
+
+    
+}}
+void printbook(struct book b) {
+    printf("Title: %s\n", b.title);
+    printf("Author: %s\n", b.author);
+    printf("Edition: %d\n", b.edition);
+    printf("ISBN: %s\n", b.isbn);
+    printf("Publisher: %s\n", b.publisher);
+    printf("Price: %f\n", b.price);
+}
