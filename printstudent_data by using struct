@@ -1,0 +1,43 @@
+#include <stdio.h>
+struct student_data{
+    int roll_no;
+    int maths;
+    int chemistry;
+    int physics;
+    int total;
+};
+void printstudent_data(struct student_data s);
+int main() {
+    struct student_data s[3];
+    for(int i=0;i<3;i++){
+        printf("enter student_data for s[%d] object \n ",i+1);
+        printf("enter roll no: ");
+        scanf("%d",&s[i].roll_no);
+        printf("enter maths marks: ");
+        scanf("%d",&s[i].maths);
+        printf("enter chemistry marks: ");
+        scanf("%d",&s[i].chemistry);
+        printf("enter physics marks: ");
+        scanf("%d",&s[i].physics);
+        s[i].total = s[i].maths + s[i].chemistry + s[i].physics;}
+        printf("printing all students data");
+        for(int i=0;i<3;i++){
+            printf("\n student %d: \n",i+1);
+            printstudent_data(s[i]);
+        }
+    return 0;
+        
+        
+        
+        
+    }
+    void printstudent_data(struct student_data s){
+        
+        printf("roll_no: %d\n",s.roll_no);
+        printf("maths marks: %d\n",s.maths);
+        printf("chemistry marks: %d\n",s.chemistry);
+        printf("physics marks: %d\n",s.physics);
+        printf("total marks: %d\n",s.total);
+        
+    }
+    
