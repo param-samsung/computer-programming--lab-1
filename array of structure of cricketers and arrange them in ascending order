@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Cricketer_info {
+    char name[30];
+    int age;
+    int test_matches;
+    float avg_runs;
+};
+int main(){
+    struct Cricketer_info c[3];
+    for(int i=0;i<10;i++){
+        printf("enter cricketer data for s[%d] object \n ",i+1);
+        getchar();
+        printf("enter name of cricketer: ");
+        fgets(c[i].name,30,stdin);
+        printf("enter age: ");
+        scanf("%d",&c[i].age);
+        printf("enter test matches played: ");
+        scanf("%d",&c[i].test_matches);
+        printf("enter average runs: ");
+        scanf("%f",&c[i].avg_runs);
+}
+struct Cricketer_info temp;
+    int i, j;
+
+   
+    for(int i = 0; i < 10 - j; i++) {
+        for(int j = 0; j < 10; j++) {
+            if(c[i].avg_runs > c[j].avg_runs) {
+                temp = c[i];
+                c[i] = c[j];
+                c[j] = temp;
+            }
+        }
+    }
+     printf("Cricketers sorted by Average Runs in Ascending Order:\n\n");
+    for(i = 0; i < 10; i++) {
+        printf("Name: %s\nAge: %d\nMatches: %d\nAverage Runs: %.2f\n\n",
+               c[i].name, c[i].age, c[i].test_matches, c[i].avg_runs);
+    }
+
+    return 0;
+}
