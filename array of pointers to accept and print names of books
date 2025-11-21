@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+    int n=3;
+char names[3][50];
+char *ptr[3];
+for(int i=0;i<3;i++){
+    ptr[i]=names[i];
+}
+for(int i=0;i<n;i++){
+printf("enter the name of book %d",i+1);
+fgets(ptr[i],50,stdin);}
+for(int i=0;i<3;i++){
+    printf("%s",ptr[i]);
+}
+
+
+
+
+    return 0;
+}
