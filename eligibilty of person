@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int a[10];
+    for(int i=0;i<10;i++){
+        printf("enter the age of people %d: ",i+1);
+        scanf("%d",&a[i]);
+    }
+for(int i=0;i<10;i++){
+    if(a[i]>=18)
+    printf("person %d is eligible \n",a[i]);
+    else if(a[i]<18)
+     printf(" person %d is not eligible \n",a[i]);
+    
+}
+
+}
