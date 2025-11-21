@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+   int a[5];
+    printf("enter the values:");
+   for(int i=0;i<5;i++){
+      
+       scanf("%d",&a[i]);
+   }
+for(int i=0;i<5;i++){
+    if(i%2==0)
+    printf("even elements of array are %d \n ",a[i]);
+    
+}
+
+
+    return 0;
+}
